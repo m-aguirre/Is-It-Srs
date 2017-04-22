@@ -18,9 +18,19 @@
   },
   "homepage": "https://github.com/m-aguirre/Is-It-Srs#readme",
   "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "express": "^4.15.2",
+    "lodash": "^4.17.4",
     "mongodb": "^2.2.26",
     "mongoose": "^4.9.5",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "webpack": "^2.4.1"
   }
 }

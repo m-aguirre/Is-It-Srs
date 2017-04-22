@@ -8,4 +8,8 @@ var userSchema = new Schema({
 });
 
 //Export function to create "SomeModel" model class
-module.exports = mongoose.model('users', userSchema );
+//module.exports = mongoose.model('users', userSchema );
+var user = mongoose.model('user', userSchema);
+
+// make this available to our users in our Node applications
+module.exports = user;

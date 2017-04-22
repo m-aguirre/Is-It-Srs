@@ -12,7 +12,7 @@ const PORT = '27017';
 //   res.send('/client/index.html');
 // })
 
-db.connect();
+
 
 
  // mongoose.connection.on('connected', function () {
@@ -22,12 +22,12 @@ db.connect();
  //     });
  // })
 
-// // GET method route
-// app.get('/', function (req, res) {
-// //  mongoose.connect('mongodb://127.0.0.1:5150/home');
-//   res.send('root')
-// });
-//
+// GET method route
+app.get('/', function (req, res) {
+//  mongoose.connect('mongodb://127.0.0.1:5150/home');
+  res.send('root')
+});
+
 // mongoose.model('users', {name:String})
 //
 // app.get('/users', function(req, res) {
@@ -43,7 +43,7 @@ app.use('/home', express.static(__dirname + '/client'));
 app.post('/', function (req, res) {
   res.send('POST request to the homepage')
 })
-
+db.connect();
 app.listen(PORT, function () {
   console.log(`Is It Srs? app listening on port ${PORT}`)
 })
