@@ -19,6 +19,8 @@
   "homepage": "https://github.com/m-aguirre/Is-It-Srs#readme",
   "dependencies": {
     "express": "^4.15.2",
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.9.5",
     "nodemon": "^1.11.0"
   }
 }
